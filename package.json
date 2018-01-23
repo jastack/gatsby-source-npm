@@ -5,9 +5,6 @@
   "main": "index.js",
   "keywords": "gatsby-plugin",
   "scripts": {
-    "build": "babel src --out-dir . --ignore __tests__",
-    "watch": "babel -w src --out-dir . --ignore __tests__",
-    "prepublish": "cross-env NODE_ENV=production npm run build"
   },
   "author": "James Stack <james.a.stack@gmail.com>",
   "license": "ISC",
