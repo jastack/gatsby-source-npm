@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-npm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add readme files from npm registry to site",
   "main": "index.js",
   "keywords": "gatsby-plugin",
