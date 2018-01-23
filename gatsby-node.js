@@ -26,6 +26,7 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
       return
     }
 
+
     const parentId = `plugin ${hit.objectID}`
     const readmeNode = {
       id: `readme ${hit.objectID}`,
@@ -44,9 +45,9 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
     delete hit._highlightResult
     delete hit.versions
 
-
     const node = {
       ...hit,
+      deprecated: `${hit.deprecated}`,
       id: parentId,
       parent: null,
       children: [],
