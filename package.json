@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-source-npm",
+  "version": "1.0.0",
+  "description": "Add readme files from npm registry to site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^3.24.9"
+  }
+}
