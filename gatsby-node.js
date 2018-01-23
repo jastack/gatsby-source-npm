@@ -45,12 +45,18 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
     delete hit._highlightResult
     delete hit.versions
 
+    const modified = new Date(hit.modified)
+    const created = new Date(hit.created)
+    hit.modified = modified
+    hit.created = created
+
     const node = {
       ...hit,
       deprecated: `${hit.deprecated}`,
       id: parentId,
       parent: null,
       children: [],
+      slug: `/packages/${hit.objectID}/`,
       readme___NODE: readmeNode.id,
       title: `${hit.objectID}`,
       internal: {
